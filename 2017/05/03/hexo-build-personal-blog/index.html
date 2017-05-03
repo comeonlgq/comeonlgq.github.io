@@ -90,17 +90,23 @@
 
 
 
-<meta name="description" content="研究生，研究方向：图像处理。">
+<meta name="description" content="##一、环境准备  安装Node.js、Git、Markdown ##二、配置  github配置注册github，接着新建一个项目，项目名称为：“你的github用户名.github.io”然后配置ssh，打开git bash首先设置你的用户名密码： git config –global user.email “bu.ru@qq.com”git config –global user.name">
 <meta name="keywords" content="hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo build personal blog">
 <meta property="og:url" content="http://yoursite.com/2017/05/03/hexo-build-personal-blog/index.html">
 <meta property="og:site_name" content="刘功琴的博客">
-<meta property="og:description" content="研究生，研究方向：图像处理。">
-<meta property="og:updated_time" content="2017-05-03T06:39:16.388Z">
+<meta property="og:description" content="##一、环境准备  安装Node.js、Git、Markdown ##二、配置  github配置注册github，接着新建一个项目，项目名称为：“你的github用户名.github.io”然后配置ssh，打开git bash首先设置你的用户名密码： git config –global user.email “bu.ru@qq.com”git config –global user.name">
+<meta property="og:image" content="http://i.imgur.com/YRD3lzR.png">
+<meta property="og:image" content="http://i.imgur.com/4HdOIYP.png">
+<meta property="og:image" content="http://i.imgur.com/DYioXK3.png">
+<meta property="og:image" content="http://i.imgur.com/UVligL8.png">
+<meta property="og:image" content="http://i.imgur.com/VgAjXA0.png">
+<meta property="og:updated_time" content="2017-05-03T08:59:32.114Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo build personal blog">
-<meta name="twitter:description" content="研究生，研究方向：图像处理。">
+<meta name="twitter:description" content="##一、环境准备  安装Node.js、Git、Markdown ##二、配置  github配置注册github，接着新建一个项目，项目名称为：“你的github用户名.github.io”然后配置ssh，打开git bash首先设置你的用户名密码： git config –global user.email “bu.ru@qq.com”git config –global user.name">
+<meta name="twitter:image" content="http://i.imgur.com/YRD3lzR.png">
 
 
 
@@ -439,7 +445,24 @@
       
 
       
-        
+        <p>##一、环境准备<br>  安装Node.js、Git、Markdown</p>
+<p>##二、配置</p>
+<ol>
+<li><p>github配置<br>注册github，<br>接着新建一个项目，项目名称为：“你的github用户名.github.io”<br><img src="http://i.imgur.com/YRD3lzR.png" alt=""><br>然后配置ssh，<br>打开git bash<br>首先设置你的用户名密码：</p>
+<p>git config –global user.email “bu.ru@qq.com”<br>git config –global user.name “bruce-sha”<br>生成密钥：</p>
+<p>ssh-keygen -t rsa -C “bu.ru@qq.com”<br>然后将生成的密码复制到下面的Key中。</p>
+</li>
+</ol>
+<p><img src="http://i.imgur.com/4HdOIYP.png" alt=""><br><img src="http://i.imgur.com/DYioXK3.png" alt=""><br><img src="http://i.imgur.com/UVligL8.png" alt=""><br>配置好后就可以看到SSH Keys已经变为绿色的。</p>
+<ol>
+<li><p>blog配置<br>下面的内容都是在git bash中执行的<br>npm -g hexo-cli<br>hexo init<br>npm install<br>hexo g  #生成public文件夹（浏览器访问资源）<br>hexo s  #启动服务，可以通过<a href="http://localhost:4000/进行访问，注意不要关闭该服务" target="_blank" rel="external">http://localhost:4000/进行访问，注意不要关闭该服务</a><br>hexo d  #将配置部署到服务器上</p>
+</li>
+<li><p>主题配置<br>git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next<br>更改站点配置文件D：\blog_config.yml(注意空格，每个命令后面都有空格，不然会出错的！)<br><img src="http://i.imgur.com/VgAjXA0.png" alt="">  </p>
+</li>
+</ol>
+<p>##三、个性化设置<br>   主题文件配置D:\blog\themes\next_config.yml<br>   具体的可以参考他人博客，在此就不多说了。<br> <a href="http://cherryblog.site/Hexo-high-level-tutorialcloudmusic,bg-customthemes-statistical.html" target="_blank" rel="external">http://cherryblog.site/Hexo-high-level-tutorialcloudmusic,bg-customthemes-statistical.html</a><br> <a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">http://ibruce.info/2013/11/22/hexo-your-blog/</a><br> <a href="http://www.cnblogs.com/dantefung/p/d8c48ba8030bcab7cfc364d423186fee.html" target="_blank" rel="external">http://www.cnblogs.com/dantefung/p/d8c48ba8030bcab7cfc364d423186fee.html</a></p>
+<p><strong>记住：每次更改配置文件后，需要重新上传一下，依次执行<br>hexo clean<br>hexo g<br>hexo d<br>就可以了。</strong></p>
+
       
     </div>
 
